@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .navbar {
+            background-color: #d8514e;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            margin: 0 10px;
+            border-radius: 5px;
+            font-size: 20px; /* Increase font size */
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-info {
+            font-size: 18px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Your Account</a>
+    </div>
+
+    <div class="container">
+        <h1>My Profile</h1>
+        <div class="profile">
+            <img src="your_profile_picture.jpg" alt="Profile Picture"> <!-- Can add picture for the user -->
+            <!-- Can be edited to replace using the account created in the sign up page -->
+            <div class="profile-info">
+                <p><strong>Name:</strong> John Daniel</p> 
+                <p><strong>Email:</strong> juantajd77@gmail.com</p>
+                <p><strong>Location:</strong> balsik hermosa Bataan</p>
+                <!-- can still add more information here, like age -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
