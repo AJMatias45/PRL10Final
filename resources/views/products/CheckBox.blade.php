@@ -46,7 +46,7 @@
                     <td>{{ $product->$date_delivered }}</td>
                     <td>{{ $product->$status }}</td>
                     <td>
-                    <form action="{{ route('companies.destroy',$company->id) }}" method="Post">
+                    <form action="{{ route('products.destroy',$product->id) }}" method="Post">
                                 <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
                                 @csrf
                                 @method('DELETE')
