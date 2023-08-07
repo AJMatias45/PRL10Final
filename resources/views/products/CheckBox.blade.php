@@ -38,16 +38,15 @@
         <tbody>
             @foreach ($products as $product)
                 <tr>
-                    <td>{{ $product->$id }}<td>
-                    <td>{{ $product->$name }}<td>
-                    <td>{{ $product->$quantity }}<td>
-                    <td>{{ $product->$cost }}<td>
-                    <td>{{ $product->$date_ordered }}<td>
-                    <td>{{ $product->$date_delivered }}<td>
-                    <td>{{ $product->$mode_of_payment }}<td>
-                    <td>{{ $product->$status }}<td>
+                    <td>{{ $product->$id }}</td>
+                    <td>{{ $product->$name }}</td>
+                    <td>{{ $product->$quantity }}</td>
+                    <td>{{ $product->$cost }}</td>
+                    <td>{{ $product->$date_ordered }}</td>
+                    <td>{{ $product->$date_delivered }}</td>
+                    <td>{{ $product->$status }}</td>
                     <td>
-                    <form action="{{ route('companies.destroy',$company->id) }}" method="Post">
+                    <form action="{{ route('products.destroy',$product->id) }}" method="Post">
                                 <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
                                 @csrf
                                 @method('DELETE')

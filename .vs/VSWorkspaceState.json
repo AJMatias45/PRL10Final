@@ -5,9 +5,8 @@
     "\\app\\Models",
     "\\resources",
     "\\resources\\views",
-    "\\resources\\views\\Products",
     "\\tests"
   ],
-  "SelectedNode": "\\resources\\views\\CheckBox.blade.php",
+  "SelectedNode": "\\app\\Models\\product.php",
   "PreviewInSolutionExplorer": false
 }

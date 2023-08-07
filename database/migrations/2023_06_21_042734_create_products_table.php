@@ -18,7 +18,6 @@ return new class extends Migration
             $table->float('cost');
             $table->string('date_ordered');
             $table->string('date_delivered');
-            $table->string('mode_of_payment');
             $table->string('status');
             $table->timestamps();
         });
